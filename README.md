@@ -70,7 +70,7 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
 ## 6. Diagrama do Banco de Dados
 
 ```mermaid
-erDiagram
+  DIagrama
 
     PESSOAS {
         VARCHAR(11) cpf PK
@@ -120,7 +120,7 @@ erDiagram
 
 
 
-Scripts SQL
+7. Scripts SQL
 
 Os scripts utilizados na implementação do banco estão disponíveis na pasta scripts.
 
@@ -144,6 +144,7 @@ V5 - Consultas
 
 Execução de comandos SELECT para consultar e validar os dados armazenados.
 
+
 8. Tecnologias Utilizadas
 PostgreSQL
 SQL
@@ -155,8 +156,6 @@ Mermaid
 
 
 Organização dos Arquivos
-
-
 aluguel-de-carros/
 │
 ├── README.md
