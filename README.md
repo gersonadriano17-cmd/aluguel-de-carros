@@ -120,7 +120,7 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
 
 
 
-7. Scripts SQL
+##7. Scripts SQL
 
 Os scripts utilizados na implementação do banco estão disponíveis na pasta scripts.
 
@@ -145,7 +145,7 @@ V5 - Consultas
 Execução de comandos SELECT para consultar e validar os dados armazenados.
 
 
-8. Tecnologias Utilizadas
+##8. Tecnologias Utilizadas
 PostgreSQL
 SQL
 Git
@@ -155,7 +155,7 @@ Mermaid
 
 
 
-Organização dos Arquivos
+##Organização dos Arquivos
 aluguel-de-carros/
 │
 ├── README.md
