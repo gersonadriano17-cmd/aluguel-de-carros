@@ -166,7 +166,12 @@ aluguel-de-carros/
 └── scripts/
 
   ├── V1__create_tables.sql
+  
   ├── V2__insert_into_tables.sql
+  
   ├── V3__update_data.sql
+  
   ├── V4__delete_data.sql
+  
   └── V5__select_queries.sql
+  
