@@ -69,10 +69,10 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
 
 ## 6. Diagrama do Banco de Dados
 
-```mermaid
+ mermaid
   DIagrama
 
-    PESSOAS {
+   PESSOAS {
         VARCHAR(11) cpf PK
         VARCHAR(100) nome
         VARCHAR(100) sobrenome
@@ -80,7 +80,7 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
         VARCHAR(150) email
     }
 
-    CLIENTES {
+  CLIENTES {
         VARCHAR(11) cpf PK, FK
         VARCHAR(100) banco
         VARCHAR(20) agencia
@@ -89,19 +89,19 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
         VARCHAR(150) pix_chave
     }
 
-    ATENDENTES {
+  ATENDENTES {
         VARCHAR(11) cpf PK, FK
         VARCHAR(50) cargo
     }
 
-    VEICULOS {
+  VEICULOS {
         VARCHAR(10) placa PK
         VARCHAR(50) marca
         VARCHAR(100) modelo
         VARCHAR(30) tipo
     }
 
-    CONTRATOS {
+  CONTRATOS {
         INTEGER numero_contrato PK
         DATE data_contrato
         VARCHAR(20) tipo_pagamento
@@ -111,10 +111,10 @@ Armazena os contratos de aluguel, relacionando um cliente a um veículo e regist
         DATE data_fim
     }
 
-    PESSOAS ||--o| CLIENTES : "pode ser"
-    PESSOAS ||--o| ATENDENTES : "pode ser"
-    CLIENTES ||--o{ CONTRATOS : "realiza"
-    VEICULOS ||--o{ CONTRATOS : "é alugado em"
+  PESSOAS ||--o| CLIENTES : "pode ser"
+  PESSOAS ||--o| ATENDENTES : "pode ser"
+  CLIENTES ||--o{ CONTRATOS : "realiza"
+  VEICULOS ||--o{ CONTRATOS : "é alugado em"
 
 
 
