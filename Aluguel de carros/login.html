@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<title>Login | FP Sellection</title>
+</head>
+<body>
+<main class="login-page">
+    <div class="login-background"></div>
+
+    <section class="login-card">
+        <div class="brand">
+            <img src="./image/logo.png" alt="FP Sellection">
+            <p>Aluguel de carros</p>
+        </div>
+
+        <div class="login-content">
+            <h1>Bem-vindo</h1>
+            <p class="subtitle">Entre na sua conta para continuar</p>
+
+            <form id="loginForm">
+                <label for="email">E-mail</label>
+                <div class="input-box">
+                    <span>✉</span>
+                    <input id="email" type="email" placeholder="seu@email.com" required>
+                </div>
+
+                <label for="password">Senha</label>
+                <div class="input-box">
+                    <span>🔒</span>
+                    <input id="password" type="password" placeholder="Digite sua senha" required>
+                    <button id="showPassword" type="button">👁</button>
+                </div>
+
+                <div class="login-options">
+                    <label class="remember">
+                        <input type="checkbox" id="remember">
+                        <span>Lembrar de mim</span>
+                    </label>
+                    <a href="#" id="forgotPassword">Esqueci minha senha</a>
+                </div>
+
+                <button class="login-button" type="submit">ENTRAR</button>
+                <p id="loginMessage" class="login-message"></p>
+            </form>
+
+            <div class="divider"><span>ou</span></div>
+
+            <p class="register">
+                Ainda não possui uma conta?
+                <a href="#" id="registerLink">Criar conta</a>
+            </p>
+        </div>
+    </section>
+</main>
+<script src="login.js"></script>
+</body>
+</html>

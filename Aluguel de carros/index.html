@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>FP Sellection</title>
+</head>
+
+<body>
+    <header>
+        <img src="./image/logo.png" allt="logo fp">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Carros</li>
+                <li>Fale Conosco</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+
+
+        <div class="List">
+            <div class="item active" data-car-id="911-turbo">
+                <div class="car-img">
+                    <img src="./image/car.png" alt="Imagem carro" class="img">
+                </div>
+                <div class="Content">
+                    <p class="car information">
+                        Ùnico dono
+                    </p>
+                    <h2>
+                        911 Turbo
+                    </h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam laudantium tempore
+                        ipsum, dolores eius cumque qui veritatis illo, distinctio veniam maxime voluptatibus dignissimos
+                        at minus corporis numquam obcaecati quos!
+                    </p>
+                    <div class="car-actions">
+                        <button class="informatio">
+                            Saiba mais
+                        </button>
+                        <button class="like-button" data-action="like">
+                            <span class="like-icon">♡</span>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="save-button" data-action="save">
+                            🔖
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-car-id="portofino">
+                <div class="car-img">
+                    <img src="./image/2.png" alt="Imagem carro" class="img">
+                </div>
+                <div class="Content">
+                    <p class="car information">
+                        Ùnico dono
+                    </p>
+                    <h2>
+                        Portofino
+                    </h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam laudantium tempore
+                        ipsum, dolores eius cumque qui veritatis illo, distinctio veniam maxime voluptatibus dignissimos
+                        at minus corporis numquam obcaecati quos!
+                    </p>
+                    <div class="car-actions">
+                        <button class="informatio">
+                            Saiba mais
+                        </button>
+                        <button class="like-button" data-action="like">
+                            <span class="like-icon">♡</span>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="save-button" data-action="save">
+                            🔖
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" data-car-id="aventador">
+                <div class="car-img">
+                    <img src="./image/3.png" alt="Imagem carro" class="img">
+                </div>
+                <div class="Content">
+                    <p class="car information">
+                        Ùnico dono
+                    </p>
+                    <h2>
+                        Aventador
+                    </h2>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nam laudantium tempore
+                        ipsum, dolores eius cumque qui veritatis illo, distinctio veniam maxime voluptatibus dignissimos
+                        at minus corporis numquam obcaecati quos!
+                    </p>
+                    <div class="car-actions">
+                        <button class="informatio">
+                            Saiba mais
+                        </button>
+                        <button class="like-button" data-action="like">
+                            <span class="like-icon">♡</span>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="save-button" data-action="save">
+                            🔖
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="Arrows">
+            <button id="prev"><img src="./image/arrow.png" alt="seta esquerda"></button>
+            <button id="next"><img src="./image/arrow.png" alt="seta direita"></button>
+        </div>
+
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- ===================== BOTÃO E PAINEL "MEUS SALVOS" ===================== -->
+    <button id="savedOpen" class="saved-open">🔖 <span id="savedCounter">0</span></button>
+
+    <div id="savedOverlay" class="saved-overlay hidden">
+        <div class="saved-card">
+            <div class="saved-header">
+                <h3>Meus carros salvos</h3>
+                <button id="savedClose" class="saved-close">&times;</button>
+            </div>
+            <div id="savedList" class="saved-list"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
